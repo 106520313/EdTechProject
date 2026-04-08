@@ -1,1 +1,11 @@
-*{background-color: #CAF0F8;}
+*{background-color: #CAF0F8;
+ font-family: Arial, Helvetica, sans-serif;}
+
+ #book_smart_logo{
+    width: 25%;
+    text-align: center;
+}
+
+h1{color: #3A3DF8;}
+
+hr{color: #3A3DF8;}
