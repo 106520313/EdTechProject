@@ -1,22 +1,85 @@
 <!DOCTYPE html>
 <!--
 Created: 01/04/2026
-Last Edited: 01/04/2026
-Authors: Cohen Pentland, Roman Young
-Description: ___
+Last Edited: 08/04/2026
+Authors: Connor Taylor, Roman Young
+Description: About page
 -->
-<html>
+
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../styles/Edtech.css">
+    <title>Booksmart Digital - About</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="EdTech Project about page">
+    <meta name="keywords" content="Education, Jobs, Applications, Home, Tech, Programmers, Designers">
+    <meta name="author" content="Connor Taylor">
+
+    <style>
+        footer {
+            font-size: 20px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: stretch;
+            align-content: normal;
+            column-gap: 50px;
+            width: 600px;
+            height: 80px;
+            position: fixed;
+            bottom: 0;
+        }
+    </style>
+</head>
+
 <body>
-    <a href="index.html">
-        <img id =book_smart_logo src="Images/BookSmart_Digital_logo_CAF0F8_background.png" alt = "BookSmart Digital Company Logo" title="To home page">
+
+    <main>
+        <a href="../index.html">
+            <img id="book_smart_logo" src="../Images/BookSmart_Digital_logo_CAF0F8_background.png" alt="BookSmart Digital Company Logo" title="To home page">
         </a>
-    <nav>
-        <ul>
-            <li><a href="index.html" target="_self">Homepage</a></li>
-            <li><a href="pages/apply.html" target="_self">Applications</a></li>
-            <li><a href="pages/jobs.html" target="_self">Jobs</a></li>
-            <li><a href="pages/about.html" target="_self">About</a></li>
-        </ul>
-    </nav>
+        <nav>
+            <ul>
+                <li><a href="../index.html" target="_self">Homepage</a></li>
+                <li><a href="apply.html" target="_self">Applications</a></li>
+                <li><a href="jobs.html" target="_self">Jobs</a></li>
+                <li><a href="about.html" target="_self">About</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <h1 style="text-align: center;">About the team</h1>
+            <ul>
+                <li>Team name: Github Gooners
+                    <ul>
+                        <li>Class: wed 10am</li>
+                        <li>Unit: COS10026 Web Technology</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h1 style="text-align: center;">About us</h1>
+            <dl>
+                <dt id="12345234">cohen pentland</dt>
+                <dd>responsible for about page</dd>
+                <dd>
+                    <span lang="zh">"学而不思则罔。"</span><br>
+                    "Learning without thought is labour lost." — Chinese
+                </dd>
+            </dl>
+        </section>
+    </main>
+
+    <footer>
+        <a href="mailto:info@edtech.com">Email Link</a>
+        <a href="https://connortaylor623.atlassian.net/jira/software/projects/GGEP/summary" target="_blank">Jira Link</a>
+        <a href="https://github.com/106520313/EdTechProject" target="_blank">Github Link</a>
+    </footer>
+
 </body>
+
 </html>

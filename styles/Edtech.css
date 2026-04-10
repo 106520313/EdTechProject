@@ -9,3 +9,21 @@
 h1{color: #3A3DF8;}
 
 hr{color: #3A3DF8;}
+
+nav ul {
+    list-style: none;          /* removes bullet points */
+    display: flex;              /* puts items in a row */
+    justify-content: center;   /* centers the flex items */
+    gap: 20px;                 /* space between items */
+    padding: 0;
+}
+
+nav a:hover {
+    background-color: #3A3DF8;
+    color: white;
+    border-radius: 4px;        /* rounded corners on hover */
+}
+
+nav {
+    text-align: center;
+}
