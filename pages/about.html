@@ -10,28 +10,13 @@ Description: About page
 
 <head>
     <link rel="stylesheet" href="../styles/Edtech.css">
+    <link rel="stylesheet" type="text/css" href="../styles/about.css">
     <title>Booksmart Digital - About</title>
     <meta charset="UTF-8">
     <meta name="description" content="EdTech Project about page">
     <meta name="keywords" content="Education, Jobs, Applications, Home, Tech, Programmers, Designers">
     <meta name="author" content="Connor Taylor">
 
-    <style>
-        footer {
-            font-size: 20px;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: flex-start;
-            align-items: stretch;
-            align-content: normal;
-            column-gap: 50px;
-            width: 600px;
-            height: 80px;
-            position: fixed;
-            bottom: 0;
-        }
-    </style>
 </head>
 
 <body>
@@ -48,32 +33,76 @@ Description: About page
                 <li><a href="about.html" target="_self">About</a></li>
             </ul>
         </nav>
+        <div class="about-container">
 
-        <section>
-            <h1 style="text-align: center;">About the team</h1>
-            <ul>
-                <li>Team name: Github Gooners
-                    <ul>
-                        <li>Class: wed 10am</li>
-                        <li>Unit: COS10026 Web Technology</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
+        <!-- Left column: team info stacked on top of group photo -->
+        <div class="about-left">
+            <section class="aboutboxes">
+                <h1>About the team</h1>
+                <ul>
+                    <li>Team name: Github Gooners
+                        <ul>
+                            <li>Class: wed 10am</li>
+                            <li>Unit: COS10026 Web Technology</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
 
-        <section>
-            <h1 style="text-align: center;">About us</h1>
-            <dl>
-                <dt id="12345234">cohen pentland</dt>
-                <dd>responsible for about page</dd>
-                <dd>
-                    <span lang="zh">"学而不思则罔。"</span><br>
-                    "Learning without thought is labour lost." — Chinese
+            <section class="aboutboxes">
+                <h1>Group photo</h1>
+                <img class="group-photo" src="../Images/group_photo.jpg" alt="Team group photo">
+            </section>
+        </div>
+
+        <section class="aboutboxes">
+            <h1>About us</h1>
+
+            <!-- Each team member is one <dl class="member"> block -->
+            <dl class="member">
+                <dt>Cohen Pentland</dt>
+                <dt>Student id: </dt>
+                <dd class="role">Working on about page</dd>
+                <dd class="quote">
+                    <span lang="zh">学而不思则罔。</span><br>
+                    <em>"Learning without thought is labour lost."</em> — Chinese
                 </dd>
             </dl>
-        </section>
-    </main>
+                        <dl class="member">
+                <dt>Oliver</dt>
+                <dt>Student id: </dt>
+                <dd class="role">Working on _blank page</dd>
+                <dd class="quote">
+                    <span lang="zh">学而不思则罔。</span><br>
+                    <em>"Learning without thought is labour lost."</em> — Chinese
+                </dd>
+            </dl>
 
+            <dl class="member">
+                <dt>Cohen Pentland</dt>
+                <dt>Student id: </dt>
+                <dd class="role">Working on about page</dd>
+                <dd class="quote">
+                    <span lang="zh">学而不思则罔。</span><br>
+                    <em>"Learning without thought is labour lost."</em> — Chinese
+                </dd>
+            </dl>
+            
+            <dl class="member">
+                <dt>Cohen Pentland</dt>
+                <dt>Student id: </dt>
+                <dd class="role">Working on about page</dd>
+                <dd class="quote">
+                    <span lang="zh">学而不思则罔。</span><br>
+                    <em>"Learning without thought is labour lost."</em> — Chinese
+                </dd>
+            </dl>
+
+
+            <!-- Add more <dl class="member"> blocks here for other team members -->
+        </section>
+        </div>
+    </main>
     <footer>
         <a href="mailto:info@edtech.com">Email Link</a>
         <a href="https://connortaylor623.atlassian.net/jira/software/projects/GGEP/summary" target="_blank">Jira Link</a>

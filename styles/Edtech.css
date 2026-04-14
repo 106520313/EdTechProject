@@ -51,3 +51,18 @@ nav {
 #description h3, #description p {
     background-color: transparent;
 }
+
+footer {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 2px solid #0077B6;
+    background-color: #90E0EF;
+}
+
+footer a {
+    background-color: transparent;
+}
