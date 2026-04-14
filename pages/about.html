@@ -17,6 +17,23 @@ Description: About page
     <meta name="keywords" content="Education, Jobs, Applications, Home, Tech, Programmers, Designers">
     <meta name="author" content="Connor Taylor">
 
+    <style>
+        footer {
+            font-size: 20px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: stretch;
+            align-content: normal;
+            column-gap: 50px;
+            width: 600px;
+            height: 80px;
+            position: fixed;
+            bottom: 0;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -34,26 +51,22 @@ Description: About page
             </ul>
         </nav>
         <div class="about-container">
+        <section class="aboutboxes">
+            <h1>About the team</h1>
+            <ul>
+                <li>Team name: Github Gooners
+                    <ul>
+                        <li>Class: wed 10am</li>
+                        <li>Unit: COS10026 Web Technology</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
 
-        <!-- Left column: team info stacked on top of group photo -->
-        <div class="about-left">
-            <section class="aboutboxes">
-                <h1>About the team</h1>
-                <ul>
-                    <li>Team name: Github Gooners
-                        <ul>
-                            <li>Class: wed 10am</li>
-                            <li>Unit: COS10026 Web Technology</li>
-                        </ul>
-                    </li>
-                </ul>
-            </section>
-
-            <section class="aboutboxes">
-                <h1>Group photo</h1>
-                <img class="group-photo" src="../Images/group_photo.jpg" alt="Team group photo">
-            </section>
-        </div>
+        <section class="aboutboxes">
+            <h1>Group photo</h1>
+            <img class="group-photo" src="../Images/group_photo.jpg" alt="Team group photo">
+        </section>
 
         <section class="aboutboxes">
             <h1>About us</h1>
