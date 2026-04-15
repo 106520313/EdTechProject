@@ -20,21 +20,6 @@
     box-sizing: border-box;
 }
 
-/* Left column: stacks team info above group photo, same width as About us */
-.about-left {
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-    flex: 1 1 0;
-    min-width: 300px;
-    max-width: 500px;
-}
-
-/* When inside the left column, boxes fill the column */
-.about-left .aboutboxes {
-    max-width: none;
-    flex: 1 1 auto;
-}
 
 .aboutboxes h1 {
     text-align: center;
@@ -58,8 +43,7 @@
 .group-photo {
     display: block;
     width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
+    height: auto;
     border-radius: 8px;
 }
 
