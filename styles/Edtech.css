@@ -39,15 +39,6 @@ nav {
     text-align: center;
 }
 
-#description {
-    background-image: url('../Images/Techhex.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat;
-    min-height: 200px;
-    min-width: 50px;
-}
-
 #description h3, #description p {
     background-color: transparent;
 }
@@ -61,6 +52,7 @@ footer {
     margin-top: 40px;
     border-top: 2px solid #0077B6;
     background-color: #90E0EF;
+    clear: both;
 }
 
 footer a {
