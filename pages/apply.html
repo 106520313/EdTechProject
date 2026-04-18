@@ -8,6 +8,20 @@ Description: ___
 
 <html>
 
+<head>
+    <!-- metadata -->
+    <meta charset="UTF-8">
+    <meta description="Sign up form for Book Smart Digital">
+    <meta keywords="form, jobs, apply">
+    <meta author="Roman Young">
+    <title>Apply</title>
+    <!-- stylesheet(s) -->
+    <link rel="stylesheet" href="../styles/EdTech.css">
+    <style>
+
+    </style>
+</head>
+
 <body>
     <a href="../index.html">
         <img id=book_smart_logo src="../images/BookSmart_Digital_logo_CAF0F8_background.png"
@@ -21,6 +35,74 @@ Description: ___
             <li><a href="about.html" target="_self">About</a></li>
         </ul>
     </nav>
+
+    <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+        <fieldset>
+            <legend>Reference number</legend>
+            <p>
+                <label for="job_reference_number">Job reference number</label>
+                <input type="text" name="Job reference number" id="job_reference_number" required="required"
+                    pattern="[a-zA-Z0-9]{5}" />
+            </p>
+
+        </fieldset>
+        <fieldset>
+            <legend>Your details</legend>
+            <p>
+                <label for="given_name">Given Name</label>
+                <input type="text" name="Given Name" id="given_name" required="required" pattern="[a-zA-Z]{1-20}" />
+            </p>
+            <p>
+                <label for="family_name">Family Name</label>
+                <input type="text" name="Family Name" id="family_name" required="required" pattern="[a-zA-Z]{1-20}" />
+            </p>
+            <p>
+                <label for="dob">Date of birth</label>
+                <input type="date" name="DOB" id="dob" required="required" />
+            </p>
+            <p>
+                <input type="radio" name="Gender" id="M_radio" value="M" required="required">
+                <label for="M_radio">Male</label>
+                <input type="radio" name="Gender" id="F_radio" value="F" required="required">
+                <label for="F_radio">Female</label>
+                <input type="radio" name="Gender" id="X_radio" value="X" required="required">
+                <label for="X_radio">Other</label>
+            </p>
+            <p>
+                <label for="street_address">Street Address</label>
+                <input type="text" name="Street Address" id="street_address" required="required"
+                    pattern="[a-zA-Z]{1-40}">
+            </p>
+            <p>
+                <label for="suburb">Suburb/Town</label>
+                <input type="text" name="Suburb/Town" id="suburb" required="required" pattern="[a-zA-Z]{1-40}">
+            </p>
+            <p>
+                <label for="state">State</label>
+                <select name="State" id="state">
+                    <option value="">Please Select</option>
+                    <option value="VIC">VIC</option>
+                    <option value="NSW">NSW</option>
+                    <option value="WA">WA</option>
+                    <option value="QLD">QLD</option>
+                    <option value="NA">NA</option>
+                    <option value="TAS">TAS</option>
+                    <option value="ACT">ACT</option>
+                </select>
+            </p>
+            <p>
+                <!-- TODO: finish this -->
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Skills</legend>
+            <p>
+                <!-- TODO: finish this -->
+            </p>
+        </fieldset>
+        <input type="submit" value="Register" />
+        <input type="reset" value="Reset Form" />
+    </form>
 </body>
 
 </html>
