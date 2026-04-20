@@ -1,3 +1,3 @@
 Referencees:
 
-Chat GTP was used to generate comp[any Logo
+Chat GTP was used to generate company Logo
