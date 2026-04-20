@@ -31,7 +31,7 @@
 
 #dev_WF {
     padding: 0.5em;
-    width: 30%;
+    width: 40%;
     float: left ;
     border: 2px inset #0077B6;
     border-radius: 8px;
@@ -67,4 +67,14 @@ section, h2 {
 
 h1{
     text-align: center;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    margin-bottom: 1em;
+    padding: 1em;
+    border: 2px inset #0077B6;
+    border-radius: 16px;
+    clear: left;
 }
