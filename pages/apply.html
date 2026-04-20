@@ -6,7 +6,7 @@ Authors: Roman Young
 Description: ___
 -->
 
-<html>
+<html lang="en">
 
 <head>
     <!-- metadata -->
@@ -18,14 +18,15 @@ Description: ___
     <!-- stylesheet(s) -->
     <link rel="stylesheet" href="../styles/EdTech.css">
     <style>
-
+        h2, h3, p, legend, label {
+            color: #49336f;
+        }
     </style>
 </head>
 
 <body>
     <a href="../index.html">
-        <img id=book_smart_logo src="../images/BookSmart_Digital_logo_CAF0F8_background.png"
-            alt="BookSmart Digital Company Logo" title="To home page">
+    <img id=book_smart_logo src="../images/BookSmart_Digital_logo_CAF0F8_background.png" alt="BookSmart Digital Company Logo" title="To home page">
     </a>
     <nav>
         <ul>
@@ -36,13 +37,15 @@ Description: ___
         </ul>
     </nav>
 
+    <h1>Application Page</h1>
+    <h2>Instructions:</h2>
+    <h3 style="font-size: 0.9rem;">Please find the relevant <a href="jobs.html" target="_blank" style="color: #3A3DF8">Reference Number</a> for the role you would like to apply to, and then fill out the form in its entirety. We will process applications as soon as possible, but please be aware that there may be delays due to the high volume of requests.</h3>
     <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
         <fieldset>
             <legend>Reference number</legend>
             <p>
                 <label for="job_reference_number">Job reference number</label>
-                <input type="text" name="Job reference number" id="job_reference_number" required="required"
-                    pattern="[a-zA-Z0-9]{5}" />
+                <input type="text" name="Job reference number" id="job_reference_number" required="required" pattern="[a-zA-Z0-9]{5}" />
             </p>
 
         </fieldset>
@@ -91,13 +94,45 @@ Description: ___
                 </select>
             </p>
             <p>
-                <!-- TODO: finish this -->
+                <label for="postcode">Postcode</label>
+                <input type="text" name="Postcode" id="postcode" required="required" pattern="[0-9]{4}">
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input type="text" name="Email" id="email" required="required" pattern="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"> <!-- source for regex: https://stackoverflow.com/questions/21608294/regex-for-validating-emails -->
+            </p>
+            <p>
+                <label for="phone_number">Phone Number</label>
+                <input type="text" name="Phone Number" id="phone_number" required="required" pattern="[0-9]{8-12}">
             </p>
         </fieldset>
         <fieldset>
             <legend>Skills</legend>
             <p>
-                <!-- TODO: finish this -->
+                <div>
+                    <label for="leadership">Leadership</label>
+                    <input type="checkbox" id="leadership" name="skills_checklist[]" value="Leadership"/>
+                </div>
+                <div>
+                    <label for="teamwork">Teamwork</label>
+                    <input type="checkbox" id="teamwork" name="skills_checklist[]" value="Teamwork"/>
+                </div>
+                <div>
+                    <label for="communication">Communication</label>
+                    <input type="checkbox" id="communication" name="skills_checklist[]" value="Communication"/>
+                </div>
+                <div>
+                    <label for="graphic_design">Graphic Design</label>
+                    <input type="checkbox" id="graphic_design" name="skills_checklist[]" value="Graphic Design"/>
+                </div>
+                <div>
+                    <label for="web_dev">Website Development</label>
+                    <input type="checkbox" id="web_dev" name="skills_checklist[]" value="Website Development"/>
+                </div>
+            </p>
+            <p>
+                <label for="other_skills">Other Skills</label>
+                <input type="textarea" id="other_skills" name="Other Skills">
             </p>
         </fieldset>
         <input type="submit" value="Register" />
