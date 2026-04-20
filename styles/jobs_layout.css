@@ -1,15 +1,26 @@
-#Jdev1_box {
+#Jdev_box {
     background-color: #CAF0F8;
     padding: 0.5em;
     width: 35%;
-    /* float: left; */
+    float: left;
     border: 3px inset #0077B6;
     border-radius: 16px;
     margin-left: 3em;
+    margin-bottom: 3em;
+}
+#Sdev_box {
+    background-color: #CAF0F8;
+    padding: 0.5em;
+    width: 35%;
+    float: right;
+    border: 3px inset #0077B6;
+    border-radius: 16px;
+    margin-right: 3em;
+    margin-bottom: 3em;
 }
 
 
-#Jdev1_desc {
+#dev_desc {
     padding: 0.5em;
     width: 60%;
     float: left ;
@@ -18,7 +29,7 @@
     margin-bottom: 2em;
 }
 
-#Jdev1_WF {
+#dev_WF {
     padding: 0.5em;
     width: 30%;
     float: left ;
@@ -29,7 +40,7 @@
 
 }
 
-#Jdev1_sal {
+#dev_sal {
     padding: 0.5em;
     width: 40%;
     float: right ;
@@ -40,7 +51,7 @@
     
 }
 
-#Jdev1_req {
+#dev_req {
     padding: 0.5em;
     width: 40%;
     float: right ;
