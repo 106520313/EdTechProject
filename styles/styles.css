@@ -1,20 +1,20 @@
 * {
     background-color: #CAF0F8;
     font-family: Arial, Helvetica, sans-serif;
+    /*Sets background colour to above and font to ariel*/
 }
 
 #book_smart_logo {
     width: 25%;
     text-align: center;
+    /*sets size and alignmemt of company logo*/
 }
 
 h1 {
     color: #3A3DF8;
+    /*Sets all h1 heading to above colour*/
 }
 
-hr {
-    color: #3A3DF8;
-}
 
 nav ul {
     list-style: none;
@@ -37,11 +37,9 @@ nav a:hover {
 
 nav {
     text-align: center;
+    /*Aligns nav to center of page*/
 }
 
-#description h3, #description p {
-    background-color: transparent;
-}
 
 footer {
     font-size: 18px;
@@ -53,8 +51,10 @@ footer {
     border-top: 2px solid #0077B6;
     background-color: #90E0EF;
     clear: both;
+    /*centeres the footer as well as setting framing and sizeing. Colours background and top line*/
 }
 
 footer a {
     background-color: transparent;
+    /*makes hyperlinks background transparent*/
 }

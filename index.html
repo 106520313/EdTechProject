@@ -9,13 +9,18 @@ Description: Homepage/index
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="styles/Edtech.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/index.css">
     <title>Booksmart Digital Home Page</title>
     <meta charset="UTF-8">
     <meta name="description" content="EdTech Project home page">
     <meta name="keywords" content="Education, Jobs, Applications, Home, Tech, Programmers, Designers">
     <meta name="author" content="Connor Taylor">
+    <style> #head_line {height: 3px; 
+        border: none; 
+        background-color: black
+    }
+    </style>
 </head>
 
     <a href="index.html">
@@ -32,11 +37,12 @@ Description: Homepage/index
     </nav>
 
     <form>
-        <input type="text" placeholder="jobs, about, etc.">
+        <label for="search">Search:</label>
+        <input type="text" id="search" name = "search" placeholder="jobs, about, etc.">
         <button type="submit">Search</button>
     </form>
 
-    <hr>
+    <hr id = head_line>
     <h1 style="text-align: center;">BookSmart Digital</h1>
     <h2 style="text-align: center;">"Where proven learing techniques meet modern tech"</h2>
     <fieldset id="description">
